@@ -37,6 +37,24 @@ docker run -p 3000:3000 payload-printer
 docker-compose up
 ```
 
+### Option 3: Vercel (Serverless)
+
+Deploy to Vercel for serverless hosting:
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+Or use the one-click deploy button:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/payload_printer)
+
+📖 **See [VERCEL_DEPLOY.md](./VERCEL_DEPLOY.md) for detailed Vercel deployment instructions**
+
 ## Usage
 
 ### Start the service
