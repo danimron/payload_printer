@@ -19,11 +19,8 @@ app.use(express.raw({ type: '*/*', limit: '10mb' }));
 // Function to format and print payload information
 function printPayload(req, label = 'PAYLOAD') {
   const timestamp = new Date().toISOString();
-  const separator = '='.repeat(60);
-  
-  console.log(`\n${separator}`);
+
   console.log(`${label} RECEIVED - ${timestamp}`);
-  console.log(`${separator}`);
   console.log(`Method: ${req.method}`);
   console.log(`URL: ${req.originalUrl}`);
   console.log(`Headers:`, JSON.stringify(req.headers, null, 2));
